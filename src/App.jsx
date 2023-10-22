@@ -48,14 +48,14 @@ function App() {
                   functionality, you{`'`}re in full control.
                 </p>
               </div>
-              <div className="absolute h-auto top-[-10rem] right-[-25rem]">
-                <img
-                  src={desktop}
-                  alt="laptop illustration"
-                  loading="lazy"
-                  className="w-full"
-                />
-              </div>
+            </div>
+            <div className="absolute h-auto top-[-10rem] right-[-25rem]">
+              {/* <img
+                src={desktop}
+                alt="laptop illustration"
+                // loading="lazy"
+                className="w-full"
+              /> */}
             </div>
           </div>
           {/* </div> */}
@@ -101,16 +101,16 @@ function App() {
       </section>
 
       {/* Section 3 */}
-      <section className="flex justify-center w-full border-4 my-44 pt-20 overflow-x-clip">
+      <section className="flex justify-center w-full my-44 pt-20 overflow-x-clip">
         <div className="w-full max-w-[1440px] px-24">
           <div className="flex justify-end relative">
             <div className="w-1/2 text-[#4b5862]">
               <div className="absolute h-44 top-[-10rem] left-[-26rem]">
-                <img
+                {/* <img
                   src={laptop}
                   alt="laptop illustration"
                   className="w-full"
-                />
+                /> */}
               </div>
               <div>
                 <div className="py-10">

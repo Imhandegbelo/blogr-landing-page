@@ -4,25 +4,22 @@ import Button from "./button";
 
 export default function HeroSection() {
   return (
-    <section className="flex justify-center w-full py-10 bg-gradient-to-l from-[#ff5d54] to-[#ff8f70] rounded-bl-[5rem]">
-      <div className="w-full max-w-[1440px] px-24">
+    <section className="flex justify-center relative w-full py-10 bg-gradient-to-l from-[#ff5d54] to-[#ff8f70] rounded-bl-[5rem]">
+      <div className="w-full max-w-[1440px] px-6 md:px-24">
         <NavBar />
-        <h1 className="text-center text-white text-[3.5rem] mt-24">
+        <h1 className="px-4 text-center text-white font-semibold text-3xl md:text-5xl lg:text-7xl mt-24">
           A modern publishing platform
         </h1>
-        <p className="text-center text-lg text-white mt-1">
+        <p className="px-5 md:px-0 pt-5 text-center text-lg text-white mt-4 md:mt-1">
           Grow your audience and build your online brand
         </p>
-        <div className="flex pt-12 pb-28 w-[60%] max-w-[350px] justify-between mx-auto">
-          <Button primary title="Start for free" />
-          <Button primary={false} title="Start for free" />
+        <div className="flex pt-12 pb-28 px-4 w-full md:w-[60%] md:max-w-[350px] justify-between mx-auto">
+          <Button primary title="Start for Free" />
+          <Button primary={false} title="Learn More" />
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="300"
-          height="300"
-          className="absolute top-0 hidden"
-        >
+      </div>
+      <div className="hidden w-full top-0 left-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1440">
           <defs>
             <linearGradient id="a" x1=".639%" x2="99.361%" y1="0%" y2="100%">
               <stop offset="0%" stop-color="#FF8F71" />
