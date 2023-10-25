@@ -2,13 +2,15 @@ import React from "react";
 import "./App.css";
 import phone_image from "./assets/images/illustration-phones.svg";
 
-import Footer from "./components/footer";
+import Footer from "./layouts/footer";
 import Button from "./components/button";
-import HeroSection from "./components/HeroSection";
+import HeroSection from "./layouts/HeroSection";
 import laptop from "./assets/images/illustration-laptop-desktop.svg";
 import laptop2 from "./assets/images/illustration-laptop-mobile.svg";
 import desktop from "./assets/images/illustration-editor-desktop.svg";
 import illustration_circles from "./assets/images/bg-pattern-circles.svg";
+import AboutSection from "./layouts/AboutSection";
+import AnimatedComponent from "./components/AnimatedComponent";
 
 function App() {
   return (
@@ -63,79 +65,44 @@ function App() {
       </section>
 
       {/* Section 2 */}
-      <section className="bg-gradient-to-r from-[#2c2d3f] to-[#3f4164] flex justify-center rounded-tr-[5rem] rounded-bl-[5rem] mt-44 mb-20 w-full relative">
-        <div className="container w-full max-w-[1440px] relative z-10 px-24 ">
-          <div className="flex justify-between items-center">
-            <div className="-mt-20 -mb-28">
-              <img
-                src={phone_image}
-                alt="phone_image"
-                loading="lazy"
-                className="-ml-10"
-              />
-            </div>
-
-            <div className="w-1/2 flex flex-col place-center text-white">
-              <h1 className="text-3xl mb-4 font-semibold">
-                State of the Art Infrastructure
-              </h1>
-              <p className="text-[#c8c8cb]">
-                With reliability and speed in mind, worldwide data centers
-                provide the backbone for ultra-fast connectivity. This ensures
-                your site will load instantly, no matter where your readers are,
-                keeping your site competitive.
-              </p>
-            </div>
-          </div>
-          {/* </div> */}
-          <div className="container absolute w-2/3 w-fitt -left-[2rem] z-50 overflow-y-clip">
-            <img
-              // src={illustration_circles}
-              src={illustration_circles}
-              alt="illustration circles"
-              loading="lazy"
-              className="absolute -top-[55rem] -left-[12rem] z-50"
-            />
-          </div>
-        </div>
-      </section>
+      <AboutSection />
 
       {/* Section 3 */}
       <section className="flex justify-center w-full my-44 pt-20 overflow-x-clip">
         <div className="w-full max-w-[1440px] px-24">
           <div className="flex justify-end relative">
-            <div className="w-1/2 text-[#4b5862]">
               <div className="absolute h-44 top-[-10rem] left-[-26rem]">
-                {/* <img
+                <img
                   src={laptop}
                   alt="laptop illustration"
                   className="w-full"
-                /> */}
+                />
               </div>
+            <div className="w-1/2 text-[#4b5862]">
               <div>
-                <div className="py-10">
+                <AnimatedComponent tag="div" className="py-10">
                   <h2 className="text-xl py-4 font-semibold text-[#1f3f5b]">
                     Free, open, simple
                   </h2>
-                  <p className="text-base">
+                  <AnimatedComponent tag="p" className="text-base">
                     Blogr is a free and open source application backed by a
                     large community of helpful developers. It supports features
                     such as code syntax highlighting, RSS feeds, social media
                     integration, third-party commenting tools, and works
                     seamlessly with Google Analytics. The architecture is clean
                     and is relatively easy to learn.
-                  </p>
-                </div>
-                <div className="py-10">
+                  </AnimatedComponent>
+                </AnimatedComponent>
+                <AnimatedComponent tag="div" className="py-10">
                   <h2 className="text-xl py-4 font-semibold text-[#1f3f5b]">
                     Powerful tooling
                   </h2>
-                  <p className="text-base">
+                  <AnimatedComponent tag="p" className="text-base">
                     Batteries included. We built a simple and straightforward
                     CLI tool that makes customization and deployment a breeze,
                     but capable of producing even the most complicated sites.
-                  </p>
-                </div>
+                  </AnimatedComponent>
+                </AnimatedComponent>
               </div>
             </div>
           </div>

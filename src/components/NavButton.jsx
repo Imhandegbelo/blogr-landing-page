@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-export default function NavButton({ primary, title, noborder }) {
+export default function NavButton({ primary, title, noborder, className }) {
   return (
     <button
-      className={`
+      className={` ${className}
         rounded-l-full rounded-r-full border border-transparent py-2 px-[2.2rem] font-bold cursor-pointer text-[0.9rem]
      ${
        primary
