@@ -1,21 +1,27 @@
-import arrowUp from "../assets/images/icon-arrow-light.svg";
 import { memo, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import AnimatedComponent from "./AnimatedComponent";
 
 function Link({ name, links, index }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   return (
-    <div className="relative w-30">
+    <div
+      onMouseEnter={() =>
+        setActiveDropdown(activeDropdown == index ? null : index)
+      }
+      onMouseLeave={() => setActiveDropdown(null)}
+      aria-haspopup="true"
+      className="relative w-30"
+    >
       <p
-        onClick={() => setActiveDropdown(activeDropdown == index ? null : index)}
+        // onMouseEnter={() =>
+        //   setActiveDropdown(activeDropdown == index ? null : index)
+        // }
+        // onMouseLeave={()=>setActiveDropdown(null)}
         className="inline-flex gap-3 w-full text-lg items-center justify-between bg-transparent px-2 hover:underline"
       >
         {name}
-        {/* {active ? (
-          <img src={arrowUp} alt="" className="ml-2 my-auto" />
-        ) : (
-          <img src={arrowUp} alt="" className="ml-2 my-auto" />
-        )} */}
       </p>
       {activeDropdown == index ? (
         <div
@@ -27,7 +33,6 @@ function Link({ name, links, index }) {
             <a
               key={link}
               href="#"
-             
               className="block w-full cursor-pointer hover:font-bold"
             >
               {link}
