@@ -5,13 +5,13 @@ import { fadeInY } from "../utils/animationVariants";
 
 export default function HeroSection() {
   return (
-    <section className="flex justify-center bg-pattern-mobile h-[40rem] w-full lg:bg-pattern-desktop bg-no-repeat bg-center rounded-bl-[5rem] pb-18 md:pb-28">
-      <div className="w-full max-w-[1440px] px-6 pt-10 md:px-24">
+    <section className="flex justify-center bg-pattern-mobile h-[30rem] md:h-[40rem] w-full lg:bg-pattern-desktop bg-no-repeat bg-center rounded-bl-[5rem] pb-18 md:pb-28">
+      <div className="w-full max-w-[1440px] px-6 md:pt-10 lg:px-24">
         <NavBar />
         <AnimatedComponent
           tag="h1"
           variants={fadeInY(0.4)}
-          className="px-4 text-center text-white font-semibold text-3xl md:text-5xl lg:text-7xl mt-12 md:mt-24"
+          className="px-4 text-center text-white font-semibold text-3xl sm:text-5xl md:text-7xl mt-12 md:mt-24"
         >
           A modern publishing platform
         </AnimatedComponent>

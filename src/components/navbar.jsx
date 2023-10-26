@@ -34,7 +34,7 @@ export default function NavBar() {
         )}
       </button>
       {menuActive && (
-        <div className="md:hidden absolute top-16 w-full 0 bg-white p-6 rounded">
+        <div className="md:hidden absolute top-16 w-full 0 bg-white p-6 rounded-lg">
           <div className=" flex flex-col gap-2 pb-6 border-b w-full">
             {navlinks.map((linkItem) => (
               <Link key={ linkItem.name} name={linkItem.name} links={linkItem.links} onclick={onclick} />

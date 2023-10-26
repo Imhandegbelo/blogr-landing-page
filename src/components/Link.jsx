@@ -15,11 +15,7 @@ function Link({ name, links, index }) {
       className="relative w-30"
     >
       <p
-        // onMouseEnter={() =>
-        //   setActiveDropdown(activeDropdown == index ? null : index)
-        // }
-        // onMouseLeave={()=>setActiveDropdown(null)}
-        className="inline-flex gap-3 w-full text-lg items-center justify-between bg-transparent px-2 hover:underline"
+        className="inline-flex gap-3 cursor-pointer w-full text-lg items-center justify-between bg-transparent px-2 hover:underline"
       >
         {name}
       </p>
@@ -33,7 +29,7 @@ function Link({ name, links, index }) {
             <a
               key={link}
               href="#"
-              className="block w-full cursor-pointer hover:font-bold"
+              className="block w-full hover:font-bold"
             >
               {link}
             </a>

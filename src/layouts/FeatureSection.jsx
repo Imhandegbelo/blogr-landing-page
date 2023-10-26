@@ -5,7 +5,7 @@ import laptop2 from "../assets/images/illustration-laptop-mobile.svg";
 
 export default function Connect() {
   return (
-    <section className="flex  justify-center w-full my-44 pt-20 ">
+    <section className="flex  justify-center w-full my-10 lg:my-20 xl:my-44 pt-20 ">
       <div className="w-full max-w-[1440px] px-6 sm:px-10 md:px-14 lg:px-24 overflow-x-clip">
         <div className="flex flex-col lg:flex-row text-center lg:text-left justify-end relative">
           <div className="lg:hidden">
@@ -17,13 +17,13 @@ export default function Connect() {
               className="w-full"
             />
           </div>
-          <div className="hidden lg:block absolute h-44 top-[-10rem] left-[-26rem]">
+          <div className="hidden lg:block absolute h-36 xl:h-44 lg:top-[-5rem] lg:left-[-20rem] xl:top-[-10rem] xl:left-[-26rem]">
             <AnimatedComponent
               tag="img"
               variants={popOut}
               src={laptop}
               alt="laptop illustration"
-              className="w-full"
+              className="lg:w-[50rem] xl:w-full"
             />
           </div>
           <div className="w-full lg:w-1/2 text-[#4b5862]">

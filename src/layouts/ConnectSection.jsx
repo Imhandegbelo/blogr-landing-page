@@ -5,7 +5,7 @@ import desktop2 from "../assets/images/illustration-editor-mobile.svg";
 
 export default function ConnectSection() {
   return (
-    <section className="flex  justify-center w-full my-44 pt-20 ">
+    <section className="flex  justify-center w-full my-10 lg:my-34 xl:my-44 pt-10 lg:pt-16 xl:pt-20 ">
       <div className="w-full max-w-[1440px] px-6 sm:px-10 md:px-14 lg:px-24 overflow-x-clip">
         <div className="flex flex-col lg:flex-row text-center lg:text-left justify-end relative">
           <div className="lg:hidden">
@@ -17,13 +17,13 @@ export default function ConnectSection() {
               className="w-[80%] mx-auto"
             />
           </div>
-          <div className="hidden lg:block absolute h-44 top-[-10rem] left-[-26rem]">
+          <div className="hidden lg:block absolute h-30 xl:h-44 lg:top-[-2rem] lg:left-[-10rem] xl:top-[-10rem] xl:left-[-26rem]">
             <AnimatedComponent
               tag="img"
               variants={popOut}
               src={desktop}
               alt="laptop illustration"
-              className="w-full"
+              className="lg:w-[35rem] xl:w-full"
             />
           </div>
           <div className="w-full lg:w-1/2 text-[#4b5862]">

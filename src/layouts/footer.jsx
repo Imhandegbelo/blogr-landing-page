@@ -12,7 +12,7 @@ const Footer = () => {
   const connect = ["Contact", "Newsletter", "LinkedIn"];
 
   return (
-    <footer className="w-full flex flex-col md:flex-row justify-center bg-[#25252d] py-20 mt-20 rounded-tr-[5rem]">
+    <footer className="w-full flex flex-col md:flex-row justify-center bg-[#25252d] py-20 mt-6 lg:mt-10 xl:mt-20 rounded-tr-[5rem]">
       <div className="flex flex-col md:flex-row justify-center text-center md:text-left md:justify-between w-full max-w-[1440px] p-6 md:px-24">
         <div className="">
           <img src={logo} alt="logo" className="mx-auto my-2 md:my-0 md:ml-0" />
