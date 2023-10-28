@@ -6,7 +6,7 @@ import { fadeInY } from "../utils/animationVariants";
 export default function HeroSection() {
   return (
     <section className="flex justify-center bg-pattern-mobile h-[30rem] md:h-[40rem] w-full lg:bg-pattern-desktop bg-no-repeat bg-center rounded-bl-[5rem] pb-18 md:pb-28">
-      <div className="w-full max-w-[1440px] px-6 md:pt-10 lg:px-24">
+      <div className="w-full max-w-[1440px] px-6 md:px-10 md:pt-10 lg:px-24">
         <NavBar />
         <AnimatedComponent
           tag="h1"
